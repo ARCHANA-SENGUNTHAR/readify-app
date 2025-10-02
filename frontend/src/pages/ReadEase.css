@@ -1,0 +1,152 @@
+.read-ease-container {
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f1f8;
+}
+
+/* Text Input */
+.text-input {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdf7ff;
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #8a2be2;
+  background-color: #fff;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+/* TTS & Save Buttons */
+.tts-buttons {
+  margin-bottom: 20px;
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, #8a2be2, #c084fc);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-purple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.4);
+}
+
+/* Display Text */
+.display-text {
+  border: 1px solid #ccc;
+  padding: 20px;
+  min-height: 200px;
+  background-color: #f9f0ff;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+}
+
+/* Saved Text Cards */
+.local-saved-container {
+  margin-top: 20px;
+}
+
+.saved-card {
+  background-color: #f4e5ff;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, transform 0.2s ease;
+}
+
+.saved-card.expanded {
+  max-height: 1000px;
+}
+
+.saved-card:hover {
+  transform: translateY(-2px);
+}
+
+.saved-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 6px 0;
+}
+
+.saved-card button {
+  background: #8a2be2;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.saved-card button:hover {
+  background: #c084fc;
+}
+.read-ease-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #e9e5f7;
+}
+
+.read-ease-card {
+  width: 90%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: #ff4d4f;
+}
+
+.logout-btn:hover {
+  background: #ff7875;
+}

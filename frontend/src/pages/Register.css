@@ -1,0 +1,132 @@
+/* Register.css */
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #f3e5f5, #e1f5fe);
+  padding: 20px;
+}
+
+/* Title */
+.register-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffffcc;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s forwards;
+}
+
+/* Inputs and Select */
+.register-form input,
+.register-form select {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 10px rgba(106, 27, 154, 0.3);
+}
+
+/* Button */
+.register-form button {
+  padding: 12px 20px;
+  background-color: #6a1b9a;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-form button:hover {
+  background-color: #4a148c;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Error message */
+.register-error {
+  color: red;
+  font-size: 0.95rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Footer text */
+.register-footer {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+.register-footer a {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dyslexia-friendly tweaks */
+.register-form input,
+.register-form select,
+.register-form button,
+.register-footer {
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}

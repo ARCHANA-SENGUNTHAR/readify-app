@@ -1,0 +1,116 @@
+/* Login.css */
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e0f7fa, #e1bee7);
+  padding: 20px;
+}
+
+/* Title */
+.login-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffffcc;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s forwards;
+}
+
+/* Inputs */
+.login-form input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #8e24aa;
+  box-shadow: 0 0 10px rgba(142, 36, 170, 0.3);
+}
+
+/* Button */
+.login-form button {
+  padding: 12px 20px;
+  background-color: #8e24aa;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-form button:hover {
+  background-color: #6a1b9a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer text */
+.login-footer {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.login-footer a {
+  color: #8e24aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dyslexia-friendly tweaks */
+.login-form input, .login-form button, .login-footer {
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
